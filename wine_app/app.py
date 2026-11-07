@@ -12,6 +12,9 @@ from sklearn import metrics
 APP_DIR = Path(__file__).parent
 
 
+# cache_resource сохраняет один общий объект модели для перезапусков приложения.
+# cache_data хранит таблицы и массивы, возвращая их отдельные копии.
+# без декоратора joblib.load читал бы модель с диска при каждом действии пользователя.
 @st.cache_resource
 def load_model(path, modified_ns):
     return joblib.load(path)
