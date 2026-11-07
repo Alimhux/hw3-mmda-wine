@@ -1,0 +1,18 @@
+{
+  "threshold": 0.8260000000000001,
+  "model_name": "SMOTE",
+  "feature_names": [
+    "fixed_acidity",
+    "volatile_acidity",
+    "citric_acid",
+    "residual_sugar",
+    "chlorides",
+    "free_sulfur_dioxide",
+    "total_sulfur_dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol",
+    "is_red"
+  ]
+}
